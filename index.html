@@ -9,7 +9,148 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+        </div>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="landing-text">
+            <h1>Jane Girshin</h1>
+            <h6>Full Stack Developer</h6>
+        </div>
+        <div class="social-media">
+            <ul class="nav-list">
+                <li>
+                    <a href="#" class="icon-link">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon-link">
+                        <i class="fas fa-envelope-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon-link">
+                        <i class="fas fa-file"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Projects</h1>
+                <h6>View my recent projects</h6>
+            </div>
+            <div class="project">
+                <div class="project-img">
+                    <img src="images/project1.jpg" alt="project1">
+                </div>
+                <div class="project-desc">
+                    <h6>Sub Header</h6>
+                    <h1>Project 1</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim molestiae distinctio est quisquam alias dolor. 
+                        Cum facere repudiandae blanditiis sint natus molestiae exercitationem minima itaque accusamus quasi? Odit, tenetur accusamus.
+                    </p>
+                    <a href="#" class="cta">Live</a>
+                    <a href="#" class="cta">Code</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-desc">
+                    <h6>Sub Header</h6>
+                    <h1>Project 2</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim molestiae distinctio est quisquam alias dolor. 
+                        Cum facere repudiandae blanditiis sint natus molestiae exercitationem minima itaque accusamus quasi? Odit, tenetur accusamus.
+                    </p>
+                    <a href="#" class="cta">Live</a>
+                    <a href="#" class="cta">Code</a>
+                </div>
+                <div class="project-img">
+                    <img src="images/project2.jpg" alt="project1">
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-img">
+                    <img src="images/project3.jpg" alt="project1">
+                </div>
+                <div class="project-desc">
+                    <h6>Sub Header</h6>
+                    <h1>Project 3</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim molestiae distinctio est quisquam alias dolor. 
+                        Cum facere repudiandae blanditiis sint natus molestiae exercitationem minima itaque accusamus quasi? Odit, tenetur accusamus.
+                    </p>
+                    <a href="#" class="cta">Live</a>
+                    <a href="#" class="cta">Code</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-desc">
+                    <h6>Sub Header</h6>
+                    <h1>Project 4</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim molestiae distinctio est quisquam alias dolor. 
+                        Cum facere repudiandae blanditiis sint natus molestiae exercitationem minima itaque accusamus quasi? Odit, tenetur accusamus.
+                    </p>
+                    <a href="#" class="cta">Live</a>
+                    <a href="#" class="cta">Code</a>
+                </div>
+                <div class="project-img">
+                    <img src="images/project4.jpg" alt="project1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact"> 
+        <div class="container">
+            <div class="section-heading">
+                <h1>Contact</h1>
+                <h6>Talk to me</h6>
+            </div>
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <label for="subject">Subject:</label>
+                <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer class="copyrights">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+            <p>&copy; 2020 Jane Girshin</p>
+        </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
