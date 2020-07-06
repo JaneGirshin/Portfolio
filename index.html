@@ -133,14 +133,27 @@
                 <h1>Contact</h1>
                 <h6>Me</h6>
             </div>
-            <form action="" data-aos="fade-up" data-aos-delay="100">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" placeholder="Name" required>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Email" required>
-                <label for="subject">Subject:</label>
-                <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
-                <input type="submit" value="Submit">
+
+            <script type="text/javascript">var submitted=false;</script>
+    
+            <!--Update the URL for thank you page on form submit -->
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+            onload="if(submitted) {window.location='http://zerobudget.club/solutions/thank-you.html';}"></iframe> 
+
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdJ8yNKD-NIxCtACPYMu2up6pSIy9Yk-mnNOcu9v8soYt5wvw/formResponse" data-aos="fade-up" data-aos-delay="100" method="post" target="hidden_iframe" onsubmit="return validateForm();">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Name" required name="entry.1534023893">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Email" required name="entry.492701043">
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <textarea name="entry.1159243228" id="subject" cols="10" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Submit" id="form-submit">
             </form>
         </div>
     </section>
