@@ -10,8 +10,8 @@
 :root {
     --gradient-color: linear-gradient(to right, #FAFF8B, #E7580C);
     --accent-color: #779B64;
-    --first-color: #EF9C40;
-    --second-color: #E7580C;
+    --first-color: #F2BB58;
+    --second-color: #EF9C40;
 }
 
 html {
@@ -61,7 +61,6 @@ header {
     height: 100vh;
     position: fixed;
     top: -100vh;
-    /* background-color: #16162d; */
     background-color: var(--accent-color);
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
@@ -182,11 +181,9 @@ li {
 
 .fa-linkedin:hover {
     color: #0077B5;
-    /* color: #283E4A; */
 }
 
 .fa-github-square:hover {
-    /* color: #24292E; */
     color: #65696d;
 }
 
@@ -222,6 +219,12 @@ li {
 .section-heading h6 {
     font-size: 2rem;
     font-weight: 200;
+}
+
+.free-to-contact {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .has-margin-right {
@@ -275,14 +278,17 @@ li {
 
 .project-desc .cta {
     display: inline-block;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
+    margin-right: 0.5rem;
     font-size: 1.5rem;
-    color: lightseagreen;
-    transition: color 650ms;
+    background-color: var(--first-color);
+    transition: background-color 650ms;
+    padding: 0.5rem;
+    border-radius: 1rem;
 }
 
 .project-desc .cta:hover {
-    color: darkseagreen;
+    background-color: var(--second-color);
 }
 
 
@@ -309,7 +315,7 @@ input, select, textarea {
     padding: 1rem;
     margin-bottom: 5px;
     border: none;
-    outline-color: var(--first-color);
+    outline: none;
 }
 
 input[type="submit"] {
@@ -319,6 +325,7 @@ input[type="submit"] {
     border-radius: .8rem;
     cursor: pointer;
     transition: background-color 650ms;
+    color: white;
 }
 
 input[type="submit"]:hover{
@@ -380,6 +387,7 @@ input[type="submit"]:focus {
         box-shadow: 0 0 0 0 rgba(255, 202, 139, 0);
     }
 }
+
 
 
 /* Responsive */

@@ -38,7 +38,7 @@ function validateName() {
         return false;
     }
     if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
-        alert("Please enter your correct name") ; //Validation Message
+        alert("Please enter your correct name") ; // Validation Message
         return false;
     }
     return true;
@@ -47,11 +47,11 @@ function validateName() {
 function validateEmail () {
     var email = document.getElementById('email').value;
     if(email.length == 0) {
-        alert("Email can't be blank") ; //Validation Message
+        alert("Email can't be blank") ; // Validation Message
         return false;
     }
     if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-        alert("Please enter a correct email address") ; //Validation Message
+        alert("Please enter a correct email address") ; // Validation Message
         return false;
     }
     return true;
@@ -60,7 +60,7 @@ function validateEmail () {
 
 function validateForm() {
     if (!validateName() || !validateEmail()) {  
-        alert("Form not submitted"); //Validation Message
+        alert("Form not submitted"); // Validation Message
         return false;
     }
     else {
