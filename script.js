@@ -21,14 +21,18 @@ $(document).ready(() => {
         }, 1000);
     });
 
+    $("#down").click(function() {
+        $('html,body').animate({
+            scrollTop: $(('#projects')).offset().top
+        }, 1000);
+    });
+
     AOS.init({
         easing: 'ease',
         duration: 1800,
         once: true
     });
 });
-
-
 
 
 function validateName() {

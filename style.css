@@ -98,7 +98,7 @@ li {
 }
 
 .menu-toggler {
-    position: absolute;
+    position: fixed;
     top: 5rem;
     right: 5rem;
     width: 5rem;
@@ -189,6 +189,28 @@ li {
 
 .fa-envelope-square:hover {
     color: #DB493C;
+}
+
+.down {   
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5rem;
+    height: 5rem;
+    background-color: #eeeeee;
+    text-align: center;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+.down i {
+    color: #24292E;
+    font-size: 2rem;
+    margin: auto;
+    padding-top: 0.5rem;
 }
 
 
